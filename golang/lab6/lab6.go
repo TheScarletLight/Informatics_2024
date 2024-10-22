@@ -6,16 +6,16 @@ type PC struct {
 	diskSize int
 }
 
-func (c *PC) SetDiskSize(size int) {
-	c.diskSize = size
+func (p *PC) SetDiskSize(size int) {
+	p.diskSize = size
 }
 
-func (c *PC) GetDiskSize() int {
-	return c.diskSize
+func (p *PC) GetDiskSize() int {
+	return p.diskSize
 }
 
 func main() {
 	minePC := PC{}
 	minePC.SetDiskSize(500)
-	fmt.Printf("Размер диска:", minePC.GetDiskSize())
+	fmt.Printf("Размер диска: %d GB\n", minePC.GetDiskSize())
 }
